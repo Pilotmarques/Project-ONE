@@ -1,2 +1,2 @@
 # Project-ONE
-Role the Dice
+A game where you toss crabs to gain points.

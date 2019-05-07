@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    background-position: center;
+    font-family: Kalam;
+    font-weight: 100;
+    font-size: 25px;
+    position: relative;
+    height: 80vh;
+    color: #555;
+}
+
+.player-0-panel {
+    width: 80%;
+    float: left;
+    height: 400px;
+    padding: 100px;
+    grid-area: header;
+}
+.player-1-panel {
+    width: 80%;
+    float: right;
+    height: 400px;
+    padding: 100px;
+    grid-area: header-3;
+}
+
+/* main {
+display: grid;
+grid-template-columns: 300px auto 300px;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: 
+
+"header header-2 header-3"
+"mid mid mid"
+"points points-2 points-3"
+
+} */
+
+main {
+    display: flex;
+    height: 75px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+}
+
+#controls > div {
+    margin: 50px;
+}
+
+.name-1 {
+    grid-area: header;
+}
+.playerPoints {
+    grid-area: points
+}
+
+.name-2 {
+    grid-area: header-2;
+
+}
+#current-0 {
+    grid-area: points;
+    
+}
+
+#current-1 {
+    grid-area: points-3;
+}
+
+button:hover { fontweight: 500;}

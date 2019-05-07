@@ -10,3 +10,4 @@ The rules for the game and instructions of how to play it, GOOD LUCK!!
 6- The person can choose to hold. IF you do this, it will mean that your score will get added to what you earned before.
 7- Then if you hold, it will be the next person's turn.
 8- The first lucky one to rack up one hundred points on their score, wins the hit!
+A game where you toss crabs to gain points.

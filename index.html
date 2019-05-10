@@ -6,48 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script defer src="./js/main.js"></script>
     <title>Toss it!</title>
 </head>
 
 <body>
-    <main>
-        <section>
-            <!-- Player 0 -->
-            <div class="player-0-panel active">
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                <div class="player-name" id="name-0">Gambler One</div>
-                <div class="player-points" id="points-0"></div>
-                <div class="player-current-box">
-                    <div class="player-current-label">Your Turn</div>
-                    <div class="player-current-points" id="current-0">20</div>
+        <div class="wrapper clearfix">
+            <div class="gambler-0-panel active">
+                <div class="gambler-name" id="name-0">Gambler 1</div>
+                <div class="gambler-score" id="score-0">27</div>
+                <div class="gambler-current-box">
+                    <div class="gambler-current-label">Current</div>
+                    <div class="gambler-current-score" id="current-0">21</div>
                 </div>
             </div>
             
-            <!-- Controls -->
-            <div id="controls">
-                <img src="./imgs/dice-4.jpeg"  alt="Craps"  class="craps">        
-                    <div>
-                      <ion-icon name="sync"></ion-icon>
-                      <ion-icon name="expand"></ion-icon>
-                      <button class="btn-new"><i class="ion-icon-checkmark-circle-outline"></i>New Game</button>
-                      <button class="btn-toss"><i class="ion-icon-sync"></i>Toss It</button>
-                      <button class="btn-hold"><i class="ion-icon-expand"></i>Hold</button>
-                    </div>
-            </div>
-            
-            <!-- Player 1 -->
-
-            <div class="player-1-panel active">
-                <div class="player-name" id="name-1">Gambler Two</div>
-                <div class="player-points" id="points-0"></div>
-                <div clas="player-current-box">
-                    <div class="player-current-label">Your Turn</div>
-                    <div class="player-current-points" id="current-1">60</div>        
+            <div class="gambler-1-panel">
+                <div class="gambler-name" id="name-1">Gambler 2</div>
+                <div class="gambler-score" id="score-1">51</div>
+                <div class="gambler-current-box">
+                    <div class="gambler-current-label">Current</div>
+                    <div class="gambler-current-score" id="current-1">0</div>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
+            <button class="btn-new"><i class="fas fa-check"></i>New game</button>
+            <button class="btn-toss"><i class="fas fa-sync-alt"></i>Toss It</button>
+            <button class="btn-hold"><i class="fas fa-expand"></i>Hold</button>
+            
+            <input type="text" placeholder="Final score" class="final-score">
+            
+            <img src="./imgs/dice-5.jpeg" alt="Craps" class="craps" id="craps-1">
+            <div>
+                <i class="ion-icons-checkmark-circle-outline"></i>
+            </div>
+        </div>
 </html>
